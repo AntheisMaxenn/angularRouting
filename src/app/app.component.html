@@ -1,0 +1,14 @@
+<div class="navbar">
+    <div class="row1">
+        <h1 [routerLink]="''"> Angular Routing Examples</h1>
+    </div>
+    <div class="row2">
+
+        <li routerLinkActive="active" [routerLink]="'/child-routes'"> Child Routes </li>
+        <li routerLinkActive="active" [routerLink]="'/auxiliary-routes'"> Auxiliary Routes </li>
+        <li routerLinkActive="active" [routerLink]="'/lazy-loading'"> Lazy Loading </li>
+        <li routerLinkActive="active" [routerLink]="'/guards'"> Guards </li>
+
+    </div>
+</div>
+<router-outlet></router-outlet>

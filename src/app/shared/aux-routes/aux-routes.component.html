@@ -1,0 +1,24 @@
+<div class="wrapper">
+    <div class="header">
+        <strong>
+            Auxiliary Routes:
+            <button [routerLink]="[{ outlets: { leftOutlet: ['CompA'] } }]">Componet A</button>
+            <button [routerLink]="[{ outlets: { leftOutlet: ['CompB'] } }]">Componet B</button>
+            |
+            <button [routerLink]="[{ outlets: { rightOutlet: ['CompC'] } }]">Componet C</button>
+            <button [routerLink]="[{ outlets: { rightOutlet: ['CompD'] } }]">Componet D</button>
+        </strong>
+    </div>
+    <div class="leftContainer">
+        <strong>
+            Left outlet:
+            <router-outlet name="leftOutlet"></router-outlet>
+        </strong>
+    </div>
+    <div class="rightContainer">
+        <strong>
+            Right outlet:
+            <router-outlet name="rightOutlet"></router-outlet>
+        </strong>
+    </div>
+</div>

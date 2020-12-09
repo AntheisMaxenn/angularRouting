@@ -1,0 +1,23 @@
+<div class="container">
+
+    <div class="controller">
+        <p>All things Gaurds!</p>
+    </div>
+
+    <div class="canDeactivate">
+        <u [routerLink]="'canDeactivate'">ActionLink</u>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, repellendus tenetur? Nemo pariatur ex deserunt?</p>
+    </div>
+
+    <div class="canActivate">
+        <u [routerLink]="'canActivate'">canActivate</u>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, repellendus tenetur? Nemo pariatur ex deserunt?</p>
+        <button (click)="login()" [ngClass]="{'isAuth' : authState}">Authenticated</button>
+    </div>
+
+    <div class="outlet">
+        Outlet Below:
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
